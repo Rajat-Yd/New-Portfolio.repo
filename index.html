@@ -13,7 +13,7 @@
 <body>
     <div class="wrapper">
         <div class="cover cover-left"></div>
-        <div class="cover cover-right turn"></div>
+        <div class="cover cover-right"></div>
         <div class="book">
             <!-- profile page -->
             <div class="book-page page-left">
@@ -36,7 +36,7 @@
             </div>
 
             <!-- page 1 & 2 -->
-            <div class="book-page page-right turn id="turn-1">
+            <div class="book-page page-right turn" id="turn-1">
                 <!-- page 1 Work-Exp -->
                 <div class="page-front">
                     <h1 class="title">Work Experience</h1>
@@ -72,7 +72,7 @@
 
                 <!-- page 2 eductaion -->
                 <div class="page-back">
-                    <h1 class="title">Eductaion</h1>
+                    <h1 class="title">Education</h1>
 
                     <div class="workedu-box">
                         <div class="workedu-content">
@@ -136,7 +136,7 @@
                     <!-- next button -->
                     <span class="nextprev-btn" data-page="turn-2">
                         <i class='bx bx-chevron-right'></i>
-                    </span>
+                    </span> 
 
                 </div>
 
@@ -159,15 +159,14 @@
                         </div> -->
 
                         <div class="skill-content">
-                                <h3>DL/ML/AI</h3>
-                                <div class="content">
-                                    <span><i class='bx bxl-google'></i>Google Colab</span>
-                                    <span><span class="material-symbols-outlined">description</span>Kaggle</span>
-                                    <span><span class="material-symbols-outlined">visibility</span>Computer vission</span>
-                                    <span><span class="material-symbols-outlined">candle</span>Pytorch & Keras(Other Librabires)</span>
-                                    <span><span class="material-symbols-outlined">smart_toy</span>Genrative AI</span>
-                                    <span><span class="material-symbols-outlined">model_training</span>LLM modle Fine tuning</span>
-                                </div>
+                            <h3>DL/ML/AI</h3>
+                            <div class="content">
+                                <span><i class='bx bxl-google'></i>G-Colab</span>
+                                <span><i class="fa-solid fa-book"></i>Kaggle</span>
+                                <span><i class="fa-solid fa-eye"></i>CV</span>
+                                <span><i class='bx bxl-python'></i>Libraries</span>
+                                <span><i class="fa-solid fa-robot"></i>Gen-AI</span>
+                            </div>
                         </div>
 
                         <div class="skill-content">
@@ -182,11 +181,67 @@
                             </div>
                         </div>
                     </div>
+
+                    <span class="number-page">4</span>
+                    <!-- prev button -->
+                    <span class="nextprev-btn back" data-page="turn-2">
+                        <i class='bx bx-chevron-left'></i>
+                    </span>
+                </div>
+            </div>
+            <!-- page 5 & 6 -->
+            <div class="book-page page-right turn" id="turn-3">
+                <!-- page 5 (latest projects or my portfolio) -->
+                <div class="page-front">
+                    <h1 class="title">Latest Projects</h1>
+                    <div class="portfolio-box">
+                        <div class="img-box">
+                            <img src="images/port.webp" alt="">
+                        </div>
+                        <div class="info-box">
+                            <div class="info-title">
+                                <h3>Project Name</h3>
+                                <a href="#">Live Preview<i class='bx bx-link-external'></i></a>
+                            </div>
+                            <p>Tech Used:</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam numquam accusamus temporibus quaerat officiis quidema.</p>
+                        </div>
+                        <div class="btn-box">
+                            <a href="#" class="btn">Source Code</a>
+                            <a href="#" class="btn">More Projects</a>
+                        </div>
+                    </div>
+                    <span class="number-page">5</span>
+                    <!-- next button -->
+                    <span class="nextprev-btn" data-page="turn-3">
+                        <i class='bx bx-chevron-right'></i>
+                    </span> 
+                </div>
+                <!-- page 6 (contatct me) -->
+                <div class="page-back">
+                    <h1 class="title">Contact Me!</h1>
+                    <div class="contact-box">
+                        <form action="#">
+                            <input type="text" class="field" placeholder="Full Name" required>
+                            <input type="email" class="field" placeholder="Email address" required>
+                            <textarea name="" id="" cols="30" rows="10" class="field" placeholder="Your Message" required></textarea>
+                            <input type="submit" class="btn" value="Send Message">
+                        </form>
+                    </div>
+                    <span class="number-page">6</span>
+                    <!-- prev button -->
+                    <span class="nextprev-btn back" data-page="turn-3">
+                        <i class='bx bx-chevron-left'></i>
+                    </span>
+                    <a href="#" class="back-profile">
+                        <p>Profile</p>
+                        <i class='bx bxs-user'></i>
+                    </a>
                 </div>
             </div>
         </div>
     </div>
-
+    <script src="index.js"></script>
     <script src="https://kit.fontawesome.com/0cb8722da4.js" crossorigin="anonymous"></script>
 </body>
 </html>
